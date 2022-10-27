@@ -1,0 +1,111 @@
+{
+  "Routes": [
+    {
+
+      "DownstreamPathTemplate": "/api/AdminLogin/Login",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/adminLogin",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/ProductManagement/AddProduct",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/addproduct",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/ProductManagement/update/{id}/{productName}",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/update/{id}/{productName}",
+      "UpstreamHttpMethod": [ "Patch" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/ProductManagement/delete/{id}/{productName}",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44346
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/delete/{id}/{productName}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/CustomerLogin/Login",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44364
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/customerlogin",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/CustomerLogin/Register",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44364
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/register",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Shopping/All",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44364
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/all",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Shopping/product/search/{productName}",
+      "DownstreamScheme": "https",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44364
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/shopping/product/search/{productName}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:40460"
+  }
+}
